@@ -1,0 +1,16 @@
+HTTP/2 404 
+server: Atlassian Proxy/1.13.6.2
+vary: Accept-Encoding
+vary: Accept
+cache-control: no-transform
+content-type: application/xml
+strict-transport-security: max-age=315360000; includeSubDomains; preload
+date: Wed, 14 Nov 2018 06:36:08 GMT
+atl-traceid: 4fb3d3af557dab0e
+x-xss-protection: 1; mode=block
+atl-tcs-time: 1
+x-content-type-options: nosniff
+atl-confluence-via: h:confluence-prod-us-8-2.prod.atl-paas.net
+content-length: 223
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><status><status-code>404</status-code><message>null for uri: https://tmt-project.atlassian.net/wiki/rest/api/content/208764929/child/attachment//data</message></status>

@@ -1,0 +1,24 @@
+Tests that have failed:
+ [error] Failed: Total 135, Failed 2, Errors 0, Passed 133
+[error] Failed tests:
+[error] 	csw.event.client.EventSubscriptionFrequencyTest
+[error] 	csw.event.client.JEventPublisherTest
+[error] Failed: csw.framework.command.CommandServiceTestMultiJvm1
+[error] Failed: csw.framework.command.CommandServiceTestMultiJvm2
+[error] Failed: csw.framework.command.CommandServiceTestMultiJvm3
+[error] Failed: csw.framework.command.CancellableCommandTestMultiJvm1
+[error] Failed: csw.framework.command.CancellableCommandTestMultiJvm2
+[error] Failed: csw.framework.deploy.containercmd.ContainerCmdTestMultiJvm1
+[error] Failed: csw.framework.deploy.containercmd.ContainerCmdTestMultiJvm2
+[error] Failed: csw.framework.deploy.containercmd.ContainerCmdTestMultiJvm3
+[error] Failed: csw.framework.command.LongRunningCommandTestMultiJvm1
+[error] Failed: csw.framework.command.LongRunningCommandTestMultiJvm2
+[error] Failed: csw.framework.command.LongRunningCommandTestMultiJvm3
+[error] Failed: Total 0, Failed 0, Errors 0, Passed 0
+[error] Error: Total 78, Failed 0, Errors 1, Passed 77
+[error] Error during tests:
+[error] 	csw.teskit.TestKitsExampleTest
+[error] (examples / Test / test) sbt.TestsFailedException: Tests unsuccessful
+[error] (csw-event-client / Test / test) sbt.TestsFailedException: Tests unsuccessful
+[error] (csw-framework / Multi-jvm / test) sbt.TestsFailedException: Tests unsuccessful
+[error] Total time: 1009 s, completed 13-Nov-2018, 3:49:56 PM

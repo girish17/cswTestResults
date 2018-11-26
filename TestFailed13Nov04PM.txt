@@ -1,0 +1,2 @@
+Tests that have failed:
+ [error] Total time: 1079 s, completed 13-Nov-2018, 4:43:47 PM

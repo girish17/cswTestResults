@@ -1,0 +1,508 @@
+[info] Loading settings for project global-plugins from idea.sbt ...
+[info] Loading global plugins from /home/girish/.sbt/1.0/plugins
+[info] Loading settings for project csw-build-build from metaplugins.sbt ...
+[info] Loading project definition from /home/girish/IdeaProjects/csw/project/project
+[info] Loading settings for project csw-build from plugins.sbt ...
+[info] Loading project definition from /home/girish/IdeaProjects/csw/project
+[info] Compiling 9 Scala sources to /home/girish/IdeaProjects/csw/project/target/scala-2.12/sbt-1.0/classes ...
+[info] Done compiling.
+[info] Loading settings for project csw from build.sbt ...
+[info] Resolving key references (29507 settings) ...
+[info] Set current project to csw (in build file:/home/girish/IdeaProjects/csw/)
+[info] Compiling 1 Scala source to /home/girish/IdeaProjects/csw/csw-time-api/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Compiling 2 Scala sources to /home/girish/IdeaProjects/csw/csw-logging-macros/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Compiling 21 Scala sources to /home/girish/IdeaProjects/csw/romaine/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Compiling 38 Scala sources to /home/girish/IdeaProjects/csw/csw-params/js/target/scala-2.12/classes ...
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/formats/MiscJsonFormats.scala:14:52: parameter value conversion in method formatFactory is never used
+[warn]   private def formatFactory[S: Format, J](implicit conversion: S => J): Format[J] = implicitly[Format[S]].asInstanceOf[Format[J]]
+[warn]                                                    ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/models/ArrayData.scala:73:42: parameter value conversion in method conversion is never used
+[warn]   implicit def conversion[A, B](implicit conversion: A ⇒ B): ArrayData[A] ⇒ ArrayData[B] = _.asInstanceOf[ArrayData[B]]
+[warn]                                          ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/models/MatrixData.scala:17:88: parameter value cTag in class MatrixData is never used
+[warn] case class MatrixData[T](data: mutable.WrappedArray[mutable.WrappedArray[T]])(implicit cTag: ClassTag[T]) {
+[warn]                                                                                        ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/models/MatrixData.scala:85:42: parameter value conversion in method conversion is never used
+[warn]   implicit def conversion[A, B](implicit conversion: A ⇒ B): MatrixData[A] ⇒ MatrixData[B] =
+[warn]                                          ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/states/StateVariable.scala:89:71: private default argument in object DemandState is never used
+[warn] case class DemandState private (prefix: Prefix, stateName: StateName, paramSet: Set[Parameter[_]] = Set.empty[Parameter[_]])
+[warn]                                                                       ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/states/StateVariable.scala:137:5: private default argument in object CurrentState is never used
+[warn]     paramSet: Set[Parameter[_]] = Set.empty[Parameter[_]]
+[warn]     ^
+[warn] 6 warnings found
+[info] Done compiling.
+[info] Compiling 14 Scala sources and 1 Java source to /home/girish/IdeaProjects/csw/csw-config-api/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Compiling 2 Scala sources and 2 Java sources to /home/girish/IdeaProjects/csw/csw-time-client/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Compiling 3 Scala sources to /home/girish/IdeaProjects/csw/csw-config-api/target/scala-2.12/test-classes ...
+[info] Done compiling.
+[info] Compiling 7 Scala sources to /home/girish/IdeaProjects/csw/csw-params/js/target/scala-2.12/test-classes ...
+[info] Done compiling.
+[info] Compiling 3 Scala sources and 1 Java source to /home/girish/IdeaProjects/csw/csw-time-client/target/scala-2.12/test-classes ...
+[info] Done compiling.
+[info] BinaryUtilsTest:
+[info] - testIsNotTextIsFalseForMoreThan85percentASCIICharacters (28 milliseconds)
+[info] - testIsBinaryIsFalseForMoreThan85percentASCIICharacters (29 milliseconds)
+[info] - testIsNotTextIsTrueForLessThan85percentASCIICharacters (1 millisecond)
+[info] - testIsBinaryIsTrueForLessThan85percentASCIICharacters (2 milliseconds)
+[info] ConfigDataTest:
+[info] - should able to retrieve string from Config Data source (94 milliseconds)
+[info] - should able to generate InputStream from Config Data source (48 milliseconds)
+[info] - should create source of ByteString from string (3 milliseconds)
+[info] - should be able to save ConfigData to local disc (45 milliseconds)
+[info] - should be able to get Config object when data is in valid HOCON format (13 milliseconds)
+[info] - config object conversion should receive exception when data is NOT in valid HOCON format (9 milliseconds)
+[info] Compiling 39 Scala sources and 2 Java sources to /home/girish/IdeaProjects/csw/csw-params/jvm/target/scala-2.12/classes ...
+[warn] /home/girish/IdeaProjects/csw/csw-params/jvm/src/main/java/csw/params/javadsl/JKeyType.scala:13:62: parameter value conversion in class JSimpleKeyType is never used
+[warn] sealed class JSimpleKeyType[S: Format: ClassTag, T](implicit conversion: T ⇒ S) extends SimpleKeyType[S]
+[warn]                                                              ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/formats/MiscJsonFormats.scala:14:52: parameter value conversion in method formatFactory is never used
+[warn]   private def formatFactory[S: Format, J](implicit conversion: S => J): Format[J] = implicitly[Format[S]].asInstanceOf[Format[J]]
+[warn]                                                    ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/models/ArrayData.scala:73:42: parameter value conversion in method conversion is never used
+[warn]   implicit def conversion[A, B](implicit conversion: A ⇒ B): ArrayData[A] ⇒ ArrayData[B] = _.asInstanceOf[ArrayData[B]]
+[warn]                                          ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/models/MatrixData.scala:17:88: parameter value cTag in class MatrixData is never used
+[warn] case class MatrixData[T](data: mutable.WrappedArray[mutable.WrappedArray[T]])(implicit cTag: ClassTag[T]) {
+[warn]                                                                                        ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/models/MatrixData.scala:85:42: parameter value conversion in method conversion is never used
+[warn]   implicit def conversion[A, B](implicit conversion: A ⇒ B): MatrixData[A] ⇒ MatrixData[B] =
+[warn]                                          ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/states/StateVariable.scala:89:71: private default argument in object DemandState is never used
+[warn] case class DemandState private (prefix: Prefix, stateName: StateName, paramSet: Set[Parameter[_]] = Set.empty[Parameter[_]])
+[warn]                                                                       ^
+[warn] /home/girish/IdeaProjects/csw/csw-params/shared/src/main/scala/csw/params/core/states/StateVariable.scala:137:5: private default argument in object CurrentState is never used
+[warn]     paramSet: Set[Parameter[_]] = Set.empty[Parameter[_]]
+[warn]     ^
+[warn] 7 warnings found
+[info] Done compiling.
+[info] Run completed in 15 seconds, 853 milliseconds.
+[info] Total number of tests run: 0
+[info] Suites: completed 0, aborted 0
+[info] Tests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0
+[info] No tests were executed.
+[info] Run completed in 15 seconds, 755 milliseconds.
+[info] Total number of tests run: 10
+[info] Suites: completed 2, aborted 0
+[info] Tests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[info] Fast optimizing /home/girish/IdeaProjects/csw/csw-params/js/target/scala-2.12/csw-params-test-fastopt.js
+[info] JTimeServiceTest:
+[info] - shouldGetUTCTime
+[info] TimeServiceTest:
+[info] - should get UTC time (18 milliseconds)
+[info] Compiling 27 Scala sources and 1 Java source to /home/girish/IdeaProjects/csw/csw-alarm-api/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Compiling 11 Scala sources to /home/girish/IdeaProjects/csw/csw-event-api/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] ScalaTest
+[info] Run completed in 10 seconds, 14 milliseconds.
+[info] Total number of tests run: 2
+[info] Suites: completed 2, aborted 0
+[info] Tests: succeeded 2, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[info] EventsTest:
+[info] SystemEvent Test
+[info] - should create with prefix and eventName (4 milliseconds)
+[info] - should create with prefix, eventName, paramSet (3 milliseconds)
+[info] - Should allow removing (0 milliseconds)
+[info] - Should allow adding (0 milliseconds)
+[info] - Should access metadata fields (0 milliseconds)
+[info] - each event created should be unique (0 milliseconds)
+[info] ObserveEvent Test
+[info] - should create with prefix and eventName (41 milliseconds)
+[info] - should create with prefix, eventName and paramSet (3 milliseconds)
+[info] - Should allow removing (2 milliseconds)
+[info] - Should allow adding (2 milliseconds)
+[info] - Should access metadata fields (1 millisecond)
+[info] - each event created should be unique (1 millisecond)
+[info] EqualityTest:
+[info] Array-based long array equality
+[info] - should short circuit with identical same arrays (2 milliseconds)
+[info] - should be equal with identical different arrays (1 millisecond)
+[info] - should fail with different valued arrays (0 milliseconds)
+[info] - should work with items too when equal (1 millisecond)
+[info] - should fail with items when values not equal (1 millisecond)
+[info] Array-based long matrix equality
+[info] - should short circuit with identical same matrices (0 milliseconds)
+[info] - should be equal with identical different matrices (0 milliseconds)
+[info] - should fail with different valued matrices (1 millisecond)
+[info] - should fail for totally different matrices (1 millisecond)
+[info] Array-based byte array equality
+[info] - should short circuit with identical same arrays (1 millisecond)
+[info] - should be equal with identical different arrays (1 millisecond)
+[info] - should fail with different valued arrays (0 milliseconds)
+[info] - should work with items too when equal (0 milliseconds)
+[info] - should fail with items when values not equal (0 milliseconds)
+[info] Array-based byte matrix equality
+[info] - should short circuit with identical same matrices (1 millisecond)
+[info] - should be equal with identical different matrices (0 milliseconds)
+[info] - should fail with different valued matrices (1 millisecond)
+[info] - should fail for totally different matrices (1 millisecond)
+[info] Array-based double array equality
+[info] - should short circuit with identical same arrays (1 millisecond)
+[info] - should be equal with identical different arrays (1 millisecond)
+[info] - should fail with different valued arrays (0 milliseconds)
+[info] - should work with items too when equal (1 millisecond)
+[info] - should fail with items when values not equal (0 milliseconds)
+[info] Array-based double matrix equality
+[info] - should short circuit with identical same matrices (0 milliseconds)
+[info] - should be equal with identical different matrices (0 milliseconds)
+[info] - should fail with different valued matrices (0 milliseconds)
+[info] - should fail for totally different matrices (0 milliseconds)
+[info] Array-based float array equality
+[info] - should short circuit with identical same arrays (0 milliseconds)
+[info] - should be equal with identical different arrays (0 milliseconds)
+[info] - should fail with different valued arrays (0 milliseconds)
+[info] - should work with items too when equal (0 milliseconds)
+[info] - should fail with items when values not equal (1 millisecond)
+[info] Array-based float matrix equality
+[info] - should short circuit with identical same matrices (1 millisecond)
+[info] - should be equal with identical different matrices (0 milliseconds)
+[info] - should fail with different valued matrices (1 millisecond)
+[info] - should fail for totally different matrices (1 millisecond)
+[info] Array-based int array equality
+[info] - should short circuit with identical same arrays (0 milliseconds)
+[info] - should be equal with identical different arrays (1 millisecond)
+[info] - should fail with different valued arrays (1 millisecond)
+[info] - should work with items too when equal (0 milliseconds)
+[info] - should fail with items when values not equal (0 milliseconds)
+[info] Array-based int matrix equality
+[info] - should short circuit with identical same matrices (0 milliseconds)
+[info] - should be equal with identical different matrices (1 millisecond)
+[info] - should fail with different valued matrices (0 milliseconds)
+[info] - should fail for totally different matrices (0 milliseconds)
+[info] Array-based short array equality
+[info] - should short circuit with identical same arrays (0 milliseconds)
+[info] - should be equal with identical different arrays (1 millisecond)
+[info] - should fail with different valued arrays (1 millisecond)
+[info] - should work with items too when equal (0 milliseconds)
+[info] - should fail with items when values not equal (0 milliseconds)
+[info] Array-based short matrix equality
+[info] - should short circuit with identical same matrices (0 milliseconds)
+[info] - should be equal with identical different matrices (0 milliseconds)
+[info] - should fail with different valued matrices (0 milliseconds)
+[info] - should fail for totally different matrices (0 milliseconds)
+[info] IdTest:
+[info] - should able to create setup commands having unique runId (1 millisecond)
+[info] - should able to create observe commands having unique runId (1 millisecond)
+[info] - should able to create wait commands having unique runId (1 millisecond)
+[info] UniqueKeyVerificationTest:
+[info] Test Commands
+[info] - Setup command is able to remove duplicate keys (4 milliseconds)
+[info] - Observe command is able to remove duplicate keys (1 millisecond)
+[info] - Wait command is able to remove duplicate keys (1 millisecond)
+[info] Test Result
+[info] - is able to remove duplicate keys (2 milliseconds)
+[info] Test Struct
+[info] - is able to remove duplicate keys (1 millisecond)
+[info] Test StateVariables
+[info] - DemandState is able to remove duplicate keys (2 milliseconds)
+[info] - CurrentState is able to remove duplicate keys (2 milliseconds)
+[info] Test Events
+[info] - ObserveEvent command is able to remove duplicate keys (2 milliseconds)
+[info] - SystemEvent command is able to remove duplicate keys (1 millisecond)
+[info] CommandsTest:
+[info] Setup config tests
+[info] - Should allow adding keys using single set (2 milliseconds)
+[info] - Should allow setting with units (1 millisecond)
+[info] - Should allow apply which returns values (0 milliseconds)
+[info] - should update for the same key with set (1 millisecond)
+[info] - Should able to create with Byte Parameteret (0 milliseconds)
+[info] - Should allow updates (3 milliseconds)
+[info] - Should allow to create setup without obsId (1 millisecond)
+[info] - Should create new RunId when a parameter is added or removed (0 milliseconds)
+[info] Observe config tests
+[info] - Should allow adding keys (0 milliseconds)
+[info] - Should allow setting (0 milliseconds)
+[info] - Should allow apply (1 millisecond)
+[info] - should update for the same key with set (0 milliseconds)
+[info] - should update for the same key with add (1 millisecond)
+[info] - Should create new RunId when a parameter is added or removed (1 millisecond)
+[info] Wait config tests
+[info] - Should allow adding keys (1 millisecond)
+[info] - Should allow setting (1 millisecond)
+[info] - Should allow apply (0 milliseconds)
+[info] - should update for the same key with set (0 milliseconds)
+[info] - should update for the same key with add (1 millisecond)
+[info] - Should create new RunId when a parameter is added or removed (1 millisecond)
+[info] testing for getting typed items
+[info] Checking for item types in configs
+[info] - Should get as IntItem (1 millisecond)
+[info] Check for multi-add
+[info] - Should allow vararg add (0 milliseconds)
+[info] Should work with remove
+[info] - Setup command should allow removing one at a time (1 millisecond)
+[info] - Observe command should allow removing one at a time (0 milliseconds)
+[info] - Wait command should allow removing one at a time (1 millisecond)
+[info] should work with remove by item
+[info] - Should allow removing one at a time (2 milliseconds)
+[info] clone command test
+[info] - clone command creates a command from existing command with a new RunId for Setup, Observe or Wait (1 millisecond)
+[info] KeyParameterTest:
+[info] basic key tests
+[info] - should have correct name (1 millisecond)
+[info] - should have equality based on name (1 millisecond)
+[info] test booleanKey
+[info] - should allow single val (2 milliseconds)
+[info] - should work with list, withUnits (1 millisecond)
+[info] - should work with list, units (1 millisecond)
+[info] test charItem
+[info] - should allow single val (1 millisecond)
+[info] - should work with list, withUnits (1 millisecond)
+[info] - should work with list, units (0 milliseconds)
+[info] test ByteItem
+[info] - should allow single val (1 millisecond)
+[info] - should work with list, withUnits (0 milliseconds)
+[info] - should work with list, units (0 milliseconds)
+[info] test ByteArrayKey
+[info] - should test single item (1 millisecond)
+[info] - should test with list, withUnits (0 milliseconds)
+[info] - should test with list, units (0 milliseconds)
+[info] - should test using one array with and without units (0 milliseconds)
+[info] - should test using var args (1 millisecond)
+[info] test byteMatrixKey
+[info] - should work with a single item (0 milliseconds)
+[info] - should work with list and withUnits (0 milliseconds)
+[info] - should work with list and units (1 millisecond)
+[info] - work with one matrix without and with units (1 millisecond)
+[info] - work with varargs (1 millisecond)
+[info] - work with varargs as arrays (1 millisecond)
+[info] test ShortItem
+[info] - should allow single val (1 millisecond)
+[info] - should work with list, withUnits (1 millisecond)
+[info] - should work with list, units (0 milliseconds)
+[info] test shortArrayKey
+[info] - should test single item (0 milliseconds)
+[info] - should test with list, withUnits (0 milliseconds)
+[info] - should test with list, units (0 milliseconds)
+[info] - should test using one array with and without units (0 milliseconds)
+[info] - should test using var args (1 millisecond)
+[info] test shortMatrixKey
+[info] - should work with a single item (1 millisecond)
+[info] - should work with list and withUnits (1 millisecond)
+[info] - should work with list and units (1 millisecond)
+[info] - work with one matrix without and with units (1 millisecond)
+[info] - work with varargs (0 milliseconds)
+[info] - work with varargs as arrays (0 milliseconds)
+[info] test IntItem
+[info] - should allow single val (0 milliseconds)
+[info] - should work with list, withUnits (0 milliseconds)
+[info] - should work with list, units (0 milliseconds)
+[info] test intArrayKey
+[info] - should test single item (1 millisecond)
+[info] - should test with list, withUnits (1 millisecond)
+[info] - should test with list, units (1 millisecond)
+[info] - should test using one array with and without units (1 millisecond)
+[info] - should test using var args (0 milliseconds)
+[info] test intMatrixKey
+[info] - should work with a single item (1 millisecond)
+[info] - should work with list and withUnits (0 milliseconds)
+[info] - should work with list and units (0 milliseconds)
+[info] - work with one matrix without and with units (1 millisecond)
+[info] - work with varargs (1 millisecond)
+[info] - work with varargs as arrays (1 millisecond)
+[info] test longKey
+[info] - should allow single val (1 millisecond)
+[info] - should work with list, withUnits (0 milliseconds)
+[info] - should work with list, units (1 millisecond)
+[info] test LongArrayKey
+[info] - should test single item (1 millisecond)
+[info] - should test with list, withUnits (0 milliseconds)
+[info] - should test with list, units (0 milliseconds)
+[info] - should test using one array with and without units (1 millisecond)
+[info] - should test using var args (1 millisecond)
+[info] test longMatrixKey
+[info] - should work with a single item (1 millisecond)
+[info] - should work with list and withUnits (0 milliseconds)
+[info] - should work with list and units (0 milliseconds)
+[info] - work with one matrix without and with units (1 millisecond)
+[info] - work with varargs (1 millisecond)
+[info] - work with varargs as arrays (0 milliseconds)
+[info] test floatItem
+[info] - should allow single val (1 millisecond)
+[info] - should work with list, withUnits (0 milliseconds)
+[info] - should work with list, units (0 milliseconds)
+[info] test floatArrayKey
+[info] - should test single item (0 milliseconds)
+[info] - should test with list, withUnits (0 milliseconds)
+[info] - should test with list, units (0 milliseconds)
+[info] - should test using one array with and without units (0 milliseconds)
+[info] - should test using var args (0 milliseconds)
+[info] test floatMatrixKey
+[info] - should work with a single item (1 millisecond)
+[info] - should work with list and withUnits (1 millisecond)
+[info] - should work with list and units (0 milliseconds)
+[info] - work with one matrix without and with units (1 millisecond)
+[info] - work with varargs (0 milliseconds)
+[info] - work with varargs as arrays (0 milliseconds)
+[info] test doubleItem
+[info] - should allow single val (1 millisecond)
+[info] - should work with list, withUnits (0 milliseconds)
+[info] - should work with list, units (0 milliseconds)
+[info] test doubleArrayKey
+[info] - should test single item (0 milliseconds)
+[info] - should test with list, withUnits (0 milliseconds)
+[info] - should test with list, units (0 milliseconds)
+[info] - should test using one array with and without units (0 milliseconds)
+[info] - should test using var args (0 milliseconds)
+[info] test doubleMatrixKey
+[info] - should work with a single item (1 millisecond)
+[info] - should work with list and withUnits (1 millisecond)
+[info] - should work with list and units (1 millisecond)
+[info] - work with one matrix without and with units (1 millisecond)
+[info] - work with varargs (1 millisecond)
+[info] - work with varargs as arrays (1 millisecond)
+[info] test TimestampItem
+[info] - should allow create a Timestamp parameter from a timestamp key (1 millisecond)
+[info] - and second must be default Unit (0 milliseconds)
+[info] - should work with list, withUnits (0 milliseconds)
+[info] - should work with list, units (0 milliseconds)
+[info] testing ChoiceItem
+[info] - should allow creating with Choices object (2 milliseconds)
+[info] - should allow creating with varargs of Strings (1 millisecond)
+[info] - should allow creation with individual Choice items (1 millisecond)
+[info] test raDecKey
+[info] - should allow single val (1 millisecond)
+[info] - should work with list, withUnits (1 millisecond)
+[info] - should work with list, units (1 millisecond)
+[info] test stringKey
+[info] - should allow single val (0 milliseconds)
+[info] - should work with list, withUnits (0 milliseconds)
+[info] - should work with list, units (1 millisecond)
+[info] testing StructItem
+[info] - should allow creating Struct items (1 millisecond)
+[info] test setting multiple values
+[info] - should allow setting a single value (1 millisecond)
+[info] - should allow setting several (1 millisecond)
+[info] - should also allow setting with sequence (1 millisecond)
+[info] JsonTest:
+[info] Test Subsystem JSON
+[info] - should encode and decode properly (1 millisecond)
+[info] Test Prefix
+[info] - should encode and decode properly (1 millisecond)
+[info] Test Units JSON
+[info] - should encode and decode properly (4 milliseconds)
+[info] Test concrete items
+[info] - char item encode/decode without units (6 milliseconds)
+[info] - char item encode/decode with units (1 millisecond)
+[info] - short item encode/decode (2 milliseconds)
+[info] - int item encode/decode (1 millisecond)
+[info] - long item encode/decode (1 millisecond)
+[info] - float item encode/decode (3 milliseconds)
+[info] - double item encode/decode (2 milliseconds)
+[info] - boolean item encode/decode (2 milliseconds)
+[info] - string item encode/decode (1 millisecond)
+[info] Testing Items
+[info] - should encode and decode items list (3 milliseconds)
+[info] Commands and Events JSON
+[info] - Should encode/decode a Setup (10 milliseconds)
+[info] - Should encode/decode an Observe (4 milliseconds)
+[info] - Should encode/decode an Wait (6 milliseconds)
+[info] - Should encode/decode an ObserveEvent (10 milliseconds)
+[info] - Should encode/decode an SystemEvent (7 milliseconds)
+[info] - Should encode/decode an CurrentState (5 milliseconds)
+[info] - Should encode/decode an DemandState (5 milliseconds)
+[info] Test Custom RaDecItem
+[info] - Should allow custom RaDecItem (4 milliseconds)
+[info] Test Double Matrix items
+[info] - Should allow double matrix values (4 milliseconds)
+[info] Test Double Array items
+[info] - Should allow double array values (5 milliseconds)
+[info] Test Int Matrix items
+[info] - Should allow int matrix values (3 milliseconds)
+[info] Test Int Array items
+[info] - Should allow int array values (1 millisecond)
+[info] Test Byte Matrix items
+[info] - Should allow byte matrix values (2 milliseconds)
+[info] Test Byte Array items
+[info] - Should allow byte array values (2 milliseconds)
+[info] Test Short Matrix items
+[info] - Should allow short matrix values (2 milliseconds)
+[info] Test Short Array items
+[info] - Should allow short array values (3 milliseconds)
+[info] Test Long Matrix items
+[info] - Should allow long matrix values (3 milliseconds)
+[info] Test Long Array items
+[info] - Should allow long array values (2 milliseconds)
+[info] Test Choice items
+[info] - Should allow choice/enum values (2 milliseconds)
+[info] testing StructItem JSON support
+[info] - should allow Struct values (3 milliseconds)
+[info] Compiling 10 Scala sources to /home/girish/IdeaProjects/csw/csw-alarm-api/target/scala-2.12/test-classes ...
+[info] Done compiling.
+[info] Run completed in 43 seconds, 363 milliseconds.
+[info] Total number of tests run: 247
+[info] Suites: completed 7, aborted 0
+[info] Tests: succeeded 247, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[info] FullAlarmSeverityTest:
+[info] - should match enum values (14 milliseconds)
+[info] AlarmHealthTest:
+[info] - should match enum values (1 millisecond)
+[info] - severities Okay, Warning should result in Good health (2 milliseconds)
+[info] - severity Major should result in Ill health (1 millisecond)
+[info] - severities Disconnected, Indeterminate, Critical should result in Bad health (0 milliseconds)
+[info] AlarmTypeTest:
+[info] - should match enum values (1 millisecond)
+[info] KeyTest:
+[info] - AlarmKey should be representing a unique alarm (72 milliseconds)
+[info] - SubsystemKey should be representing keys for all alarms of a subsystem (7 milliseconds)
+[info] - ComponentKey should be representing keys for all alarms of a component (12 milliseconds)
+[info] - GlobalKey should be representing keys for all alarms (5 milliseconds)
+[info] - AlarmKey should not allow '*' character (3 milliseconds)
+[info] - AlarmKey should not allow '[' character (2 milliseconds)
+[info] - AlarmKey should not allow ']' character (1 millisecond)
+[info] - AlarmKey should not allow '-' character (1 millisecond)
+[info] - AlarmKey should not allow '^' character (2 milliseconds)
+[info] - ComponentKey should not allow '*' character (2 milliseconds)
+[info] - ComponentKey should not allow '[' character (1 millisecond)
+[info] - ComponentKey should not allow ']' character (1 millisecond)
+[info] - ComponentKey should not allow '-' character (1 millisecond)
+[info] - ComponentKey should not allow '^' character (1 millisecond)
+[info] - ComponentKey should not allow empty values (2 milliseconds)
+[info] - AlarmKey should not allow empty values (2 milliseconds)
+[info] AlarmMetadataTest:
+[info] - should get alarm key from AlarmMetadata (1 millisecond)
+[info] - should always support Indeterminate and Okay severities  (1 millisecond)
+[info] - should tell if the alarm is active or not (2 milliseconds)
+[info] - should be able to get description of the alarm (2 milliseconds)
+[info] - should be able to get alarm type (15 milliseconds)
+[info] - should get probable cause from AlarmMetadata (1 millisecond)
+[info] - should get operator response from AlarmMetadata (1 millisecond)
+[info] - should be able to determine if alarm can be auto-acknowledged (1 millisecond)
+[info] - should be able to determine if alarm can be latched (1 millisecond)
+[info] ShelveStatusTest:
+[info] - should match enum values (1 millisecond)
+[info] AcknowledgementStatusTest:
+[info] - should match enum values (1 millisecond)
+[info] AlarmSeverityTest:
+[info] - should match enum values (1 millisecond)
+[info] ActivationStatusTest:
+[info] - should match enum values (1 millisecond)
+[info] Run completed in 3 seconds, 101 milliseconds.
+[info] Total number of tests run: 35
+[info] Suites: completed 9, aborted 0
+[info] Tests: succeeded 35, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[error] coursier.ResolutionException: 1 download error
+[error]     Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar
+[error] coursier.ResolutionException: 1 download error
+[error]     Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar
+[error] coursier.ResolutionException: 1 download error
+[error]     Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar
+[error] (csw-logging / update) coursier.ResolutionException: 1 download error
+[error]     Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar
+[error] (csw-network-utils / update) coursier.ResolutionException: 1 download error
+[error]     Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar
+[error] (csw-commons / update) coursier.ResolutionException: 1 download error
+[error]     Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar
+[error] Total time: 292 s, completed 15-Nov-2018, 4:03:56 PM
+[INFO] [11/15/2018 16:03:56.811] [Thread-232] [CoordinatedShutdown(akka://sbt-web)] Starting coordinated shutdown from JVM shutdown hook
